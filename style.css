@@ -1,53 +1,83 @@
+/* Main page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #222;
+    line-height: 1.6;
 }
 
+/* Main navigation using flex */
 nav {
     background-color: #333;
     padding: 12px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 6px 10px;
-}
-
-nav a:hover {
-    background-color: #555;
+    padding: 8px 12px;
     border-radius: 4px;
 }
 
-.container {
-    padding: 20px;
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
+/* Hover effect */
+nav a:hover {
+    background-color: #555;
+}
+
+/* Active page style */
+nav a.active {
+    background-color: #ffffff;
+    color: #222;
+    font-weight: bold;
     border: 1px solid #ccc;
 }
 
-img {
-    max-width: 100%;
-    margin-top: 10px;
-    border: 1px solid #999;
-    padding: 4px;
+/* Shared content box */
+.container {
+    padding: 24px;
+    max-width: 950px;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
+/* Image styling */
+img {
+    max-width: 100%;
+    margin-top: 12px;
+    border: 1px solid #999;
+    padding: 4px;
+    background-color: white;
+}
+
+/* Footer note shown across all pages */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     background: #333;
     color: white;
     margin-top: 20px;
 }
 
-/* table styling */
+footer a {
+    color: #ffffff;
+}
+
+
+.project-note {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f0f4f8;
+    border-left: 4px solid #336699;
+}
+
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -64,8 +94,81 @@ th {
     background-color: #e2e2e2;
 }
 
-/* id selector */
+/* Id selector */
 #browser-table-title {
     color: #003366;
     margin-top: 25px;
+}
+
+/* Quiz styling */
+.quiz-form fieldset {
+    border: 1px solid #bbb;
+    margin-bottom: 18px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.quiz-form legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+.quiz-form label {
+    display: block;
+    margin: 6px 0;
+}
+
+.quiz-form input[type="text"] {
+    width: 100%;
+    max-width: 420px;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 16px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#quiz-results {
+    margin-top: 25px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.pass {
+    color: green;
+    font-weight: bold;
+}
+
+.fail {
+    color: #b30000;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: #b30000;
 }
