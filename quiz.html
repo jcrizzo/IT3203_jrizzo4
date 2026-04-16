@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="concepts.html">Concepts</a>
+    <a href="quiz.html" class="active">Quiz</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="container">
+    <h1>Web Browsers Quiz</h1>
+    <p>This self-assessment quiz reviews ideas from the website. Complete the quiz and submit it to see your score right away.</p>
+
+    <!-- Quiz form -->
+    <form id="browser-quiz" class="quiz-form">
+        <fieldset>
+            <legend>1. Fill in the blank</legend>
+            <label for="q1">The language used to structure web pages is ________.</label>
+            <input type="text" id="q1" name="q1">
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Multiple choice</legend>
+            <p>Which browser component displays HTML and CSS on the screen?</p>
+            <label><input type="radio" name="q2" value="User Interface"> User Interface</label>
+            <label><input type="radio" name="q2" value="Rendering Engine"> Rendering Engine</label>
+            <label><input type="radio" name="q2" value="Bookmark Manager"> Bookmark Manager</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Multiple choice</legend>
+            <p>Which language is mainly used to add interactivity to websites?</p>
+            <label><input type="radio" name="q3" value="CSS"> CSS</label>
+            <label><input type="radio" name="q3" value="JavaScript"> JavaScript</label>
+            <label><input type="radio" name="q3" value="PNG"> PNG</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Multiple choice</legend>
+            <p>Which browser was especially popular during the 1990s?</p>
+            <label><input type="radio" name="q4" value="Netscape"> Netscape</label>
+            <label><input type="radio" name="q4" value="Safari"> Safari</label>
+            <label><input type="radio" name="q4" value="Edge"> Edge</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Multi-selection</legend>
+            <p>Select all technologies commonly used in web pages:</p>
+            <label><input type="checkbox" name="q5" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="q5" value="CSS"> CSS</label>
+            <label><input type="checkbox" name="q5" value="JavaScript"> JavaScript</label>
+            <label><input type="checkbox" name="q5" value="PowerPoint"> PowerPoint</label>
+        </fieldset>
+
+        <div class="button-row">
+            <button type="submit">Submit Quiz</button>
+            <button type="button" id="reset-btn">Retake Quiz</button>
+        </div>
+    </form>
+
+    <div id="quiz-results"></div>
+
+    <div class="project-note">
+        <p><strong>Class Project:</strong> IT3203 Web Development</p>
+        <p><a href="https://ksuweb.github.io/IT3203/" target="_blank">Course Website</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>IT3203 Class Project | <a href="https://ksuweb.github.io/IT3203/" target="_blank">Course Website</a></p>
+</footer>
+
+<script src="quiz.js"></script>
+</body>
+</html>
