@@ -211,3 +211,32 @@ button:hover {
         font-size: 12px;
     }
 }
+
+/* QUIZ styling improvement  */
+
+.quiz-form {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.quiz-form fieldset {
+    background: #f9f9f9;
+}
+
+
+/* NAV improvement           */
+nav {
+    position: sticky;
+    top: 0;
+}
+
+/* MOBILE + TABLE FIXES      */
+
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
