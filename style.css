@@ -172,3 +172,42 @@ button:hover {
 .incorrect {
     color: #b30000;
 }
+/* Tablet view */
+@media (max-width: 900px) {
+    .container {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
