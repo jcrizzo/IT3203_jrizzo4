@@ -240,3 +240,6 @@ nav {
         overflow-x: auto;
     }
 }
+ul li {
+    margin-bottom: 10px;
+}
