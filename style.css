@@ -226,13 +226,13 @@ button:hover {
 }
 
 
-/* NAV improvement           */
+/* NAV improvement  */
 nav {
     position: sticky;
     top: 0;
 }
 
-/* MOBILE + TABLE FIXES      */
+/* Mobile + Table adjustment  */
 
 @media (max-width: 600px) {
     table {
